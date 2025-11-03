@@ -24,7 +24,7 @@ RUN apt update && \
                     libavformat-dev \
                     libavutil-dev \
                     libswresample-dev \
-                    git-lfs sox libsox-dev \
+                    git-lfs sox libsox-dev zip unzip \
                     libswscale-dev && \
     git lfs install && \
     apt clean && rm -rf /var/lib/apt/lists/* && \
