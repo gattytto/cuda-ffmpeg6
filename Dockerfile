@@ -24,7 +24,9 @@ RUN apt update && \
                     libavformat-dev \
                     libavutil-dev \
                     libswresample-dev \
+                    git-lfs sox libsox-dev \
                     libswscale-dev && \
+    git lfs install && \
     apt clean && rm -rf /var/lib/apt/lists/* && \
     mkdir -p /usr/share/espeak-ng-data &&  \
     ln -s /usr/lib/*/espeak-ng-data/* /usr/share/espeak-ng-data/ 
