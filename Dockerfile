@@ -11,11 +11,11 @@ RUN apt update && \
     add-apt-repository ppa:deadsnakes/ppa && \
     find /etc/apt/sources.list.d/ -name "*handbook1*" -exec sed -i 's/noble/focal/g' {} \; && \
     apt update && \
-    apt install -y setuptools \
-                    conda \
+    apt install -y  conda \
                     python3.11 \
                     python3.11-dev \
                     python3-dev \
+                    python3-setuptools \
                     build-essential \
                     pkg-config \
                     python3-venv \
